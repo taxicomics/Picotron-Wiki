@@ -25,7 +25,7 @@ Picotron method for menu items, more capability than the legacy support p8 metho
 
 ## Arguments
 
-### m
+### `m`: string/table
 
 Setting this to `---` creates a divider menu item
 
@@ -33,15 +33,19 @@ Otherwise modifies the menu through `m` acting as a table.
 
 `m` having the following values can have different effects:
 
-#### id
+#### `id`: string
 
 Sets the ID of the item, replaces any item with this id with this.
 
-#### label
+#### `label`: string
 
 The text to display as the option
 
 A lack of label causes the item to be deleted
+
+#### `action`: function
+
+A function to call when you select this option.
 
 ## Returns
 
