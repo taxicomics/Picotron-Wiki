@@ -59,6 +59,7 @@ where c is a channel, addr is an address, n is a node:
 * 321 - amount of frames that the active gif capture has, `0.0` otherwise
 * 322 - `1.0` when you're actively capturing a gif, `0.0` otherwise
 * 330 - `1.0` when Picotron's battery saver is active, `0.0` otherwise
+* 333 - +1 of the previous stat(333) every time.
 * 400+c,0 - `1.0` when a note is held, `0.0` otherwise
 * 400+c,1 - channel instrument
 * 400+c,2 - channel volume
