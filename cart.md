@@ -42,6 +42,12 @@ One click easy updating
 
 Custom themes (colors in hex and fonts)
 
+Generates entries for missing functions (based on the loaded Picotron API)
+
+Right click on the sidebar to open the source code & other information about functions
+
+Rudimentary search for the wiki with the top left search bar
+
 ## To Do / Issues
 
 Some markdown formatting isn't correct (I think this comes from the pod db treating the md codeblock headers as real headers, seen in `documenting.md`)
