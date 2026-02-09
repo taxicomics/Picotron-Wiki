@@ -20,6 +20,8 @@ The file data, e.g: a table for a `.pod` file.
 
 Optional metadata of the file, e.g: `{mymetadatavalue="grapes"}`
 
+If you use `{metadata_format="none"}`, this will cut any metadata from the file.
+
 ## Returns
 
 This function does not return anything
