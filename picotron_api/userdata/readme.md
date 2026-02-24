@@ -218,6 +218,33 @@ This is effectively a more verbose way to implement the [`blit`](methods/blit/ma
 
 The same rules about overrunning the end of the array that applies to each individual group also applies to `read_i` and `write_i`. If either exceed the end of the array, iteration will stop, and the value will be immediately returned. Note that even if an individual group overruns, this will not stop the next group from operating if `read_i` and `write_i` are still valid indices.
 
+## Matrix multiplication
+While userdatas are row-major with respect to their own API, they are column-major with respect to the mathematical construct known as a matrix. That is to say each element of a column in a matrix is stored successively, and the columns of a matrix correspond to the rows of a userdata. The net effect is that matrices in Picotron are transposed compared to their mathematical counterpart.
+
+One practical consequence of this counterintuitive mapping is that when transcribing matrices for use in Picotron, you will have to transpose each element from how it's represented in mathematical notation.
+
+For instance, this projection matrix, as you would find it written down in mathematical notation:
+```
+[      e            0            0            0      ]
+[      0           e/a           0            0      ]
+[      0            0      (-f+n)/(f-n)  -2fn/(f-n)  ]
+[      0            0           -1            0      ]
+```
+Would need to be written to the userdata like so:
+```lua
+local projection_mat = userdata("f64", 4, 4)
+projection_mat:set(0, 0,
+	e,   0,            0,  0,
+	0, e/a,            0,  0,
+	0,   0, (-f+n)/(f-n), -1,
+	0,   0,   -2fn/(f-n),  0
+)
+```
+
+Presumably this was done to ensure that indices in the userdata are lexicographical, that the order that values are written into userdatas is consistent with how they are accessed, and that 1D userdatas can serve as column vectors even though they are written and stored as a single row.
+
+The rest of this documentation will refer to the rows and columns in the row-major sense, even for matrices, unless explicitly stated otherwise.
+
 ## References
 [userdata()](/picotron_api/functions/userdata/main.md)
 
