@@ -2,6 +2,10 @@
 ## Overview
 Calculates the dot product of the vectors on the first row of two float typed userdatas. The resulting value is the cosine of the angle between the two first-row vectors multiplied by the magnitude of both.
 
+## Arguments
+### `other`: [userdata](/picotron_api/userdata/readme.md)
+The other userdata to perform a dot product with.
+
 ## Returns
 ### `value`: number|nil
 The dot product of the vectors in the first row of `self` and `other`, or nil if either is not float typed, or they are not the same width.

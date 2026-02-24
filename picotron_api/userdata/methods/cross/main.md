@@ -1,6 +1,10 @@
-# userdata:cross(other): ud
+# userdata:cross(rhs): ud
 ## Overview
 Calculates the cross product of the two vectors in the first three elements of the first row of two float typed userdatas. The resulting vector is orthogonal to both vectors, with a magnitude of the sine of the angle between the vectors multiplied by the magnitude of both.
+
+## Arguments
+### `rhs`: [userdata](/picotron_api/userdata/readme.md)
+The right hand side of the cross product operation.
 
 ## Returns
 ### `ud`: [userdata](/picotron_api/userdata/readme.md)|nil
