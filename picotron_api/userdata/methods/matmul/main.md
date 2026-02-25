@@ -1,6 +1,6 @@
 # userdata:matmul(rhs, [dest], [batch_height]): ud
 ## Overview
-Performs a matrix multiplication between two userdatas, where the left hand side has the same width as the right hand side's height. See the [matrix multiplication](/picotron_api/userdata/readme.md#matrix-multiplication) section of the userdata API reference for more information.
+Performs a matrix multiplication between two userdatas, where the left hand side has the same width as the right hand side's height. See the [matrix multiplication](/picotron_api/userdata/readme.md#matrix-multiplication) section of the userdata API reference for more information on Picotron's handling of matrices.
 
 ## Arguments
 ### `rhs`: [userdata](/picotron_api/userdata/readme.md)
