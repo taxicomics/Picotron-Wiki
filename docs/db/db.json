@@ -624,6 +624,32 @@
   },
   {
     "name": "main.md",
+    "path": "/system/details/util/shutdown/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "shutdown",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Shuts down Picotron",
+              "",
+              "Source: [source.lua](source.lua)"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
     "path": "/system/details/util/save/main.md",
     "data": [
       {
@@ -694,11 +720,11 @@
   },
   {
     "name": "main.md",
-    "path": "/system/details/util/shutdown/main.md",
+    "path": "/system/details/util/run/main.md",
     "data": [
       {
         "level": 1,
-        "text": "shutdown",
+        "text": "run",
         "content": [
           ""
         ],
@@ -708,7 +734,7 @@
             "text": "Overview",
             "content": [
               "",
-              "Shuts down Picotron",
+              "Runs the current loaded cartridge (`/ram/cart/`)",
               "",
               "Source: [source.lua](source.lua)"
             ],
@@ -795,32 +821,6 @@
                 "children": []
               }
             ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
-    "path": "/system/details/util/run/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "run",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "Runs the current loaded cartridge (`/ram/cart/`)",
-              "",
-              "Source: [source.lua](source.lua)"
-            ],
-            "children": []
           }
         ]
       }
@@ -1131,6 +1131,54 @@
   },
   {
     "name": "main.md",
+    "path": "/system/details/util/mkdir/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "mkdir path",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Creates a folder in `path`",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "path",
+                "content": [
+                  "",
+                  "Relative location you want to create a path in",
+                  "",
+                  "Relative to the current working directory",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
     "path": "/system/details/util/mount/main.md",
     "data": [
       {
@@ -1175,54 +1223,6 @@
                 "content": [
                   "",
                   "Folder to mount at `target`"
-                ],
-                "children": []
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
-    "path": "/system/details/util/mkdir/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "mkdir path",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "Creates a folder in `path`",
-              "",
-              "Source: [source.lua](source.lua)",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Arguments",
-            "content": [
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "path",
-                "content": [
-                  "",
-                  "Relative location you want to create a path in",
-                  "",
-                  "Relative to the current working directory",
-                  ""
                 ],
                 "children": []
               }
@@ -1624,53 +1624,6 @@
   },
   {
     "name": "main.md",
-    "path": "/system/details/util/edit/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "edit path",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "Edit the file specified",
-              "",
-              "Fails if there is no default program to edit it",
-              "",
-              "Source: [source.lua](source.lua)",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Arguments",
-            "content": [
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "path",
-                "content": [
-                  "",
-                  "Path to the file you want to edit"
-                ],
-                "children": []
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
     "path": "/system/details/util/dir/main.md",
     "data": [
       {
@@ -1708,6 +1661,53 @@
                 "content": [
                   "",
                   "Optional argument for the path you want to list files of, instead of your current working path"
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/system/details/util/edit/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "edit path",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Edit the file specified",
+              "",
+              "Fails if there is no default program to edit it",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "path",
+                "content": [
+                  "",
+                  "Path to the file you want to edit"
                 ],
                 "children": []
               }
@@ -4329,62 +4329,6 @@
   },
   {
     "name": "main.md",
-    "path": "/picotron_api/userdata/methods/magnitude/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "userdata:magnitude(): value",
-        "content": [],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "For float typed userdatas, calculates the magnitude of the first row in Euclidean space.",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Returns",
-            "content": [],
-            "children": [
-              {
-                "level": 3,
-                "text": "`value`: number|nil",
-                "content": [
-                  "The magnitude of the first row of the userdata in Euclidean space, or nil if the userdata is not float typed.",
-                  ""
-                ],
-                "children": []
-              }
-            ]
-          },
-          {
-            "level": 2,
-            "text": "Example",
-            "content": [
-              "```lua",
-              "local ud = vec(1, -2, 0.2)",
-              "",
-              "local mag = ud:magnitude()",
-              "?mag -- 2.2449944320644...",
-              "",
-              "-- You can normalize a userdata vector by dividing it by its magnitude.",
-              "local normalized = ud / mag",
-              "?normalized -- (0.44543540318737, -0.89087080637475, 0.089087080637475)",
-              "?normalized:magnitude() -- 1.0",
-              "```"
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
     "path": "/picotron_api/userdata/methods/matmul/main.md",
     "data": [
       {
@@ -4487,6 +4431,62 @@
               "",
               "assert(approx(dest:row(0):magnitude(), verts:row(0):magnitude()))",
               "assert(approx(dest:row(1):magnitude(), verts:row(1):magnitude()))",
+              "```"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/picotron_api/userdata/methods/magnitude/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "userdata:magnitude(): value",
+        "content": [],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "For float typed userdatas, calculates the magnitude of the first row in Euclidean space.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [],
+            "children": [
+              {
+                "level": 3,
+                "text": "`value`: number|nil",
+                "content": [
+                  "The magnitude of the first row of the userdata in Euclidean space, or nil if the userdata is not float typed.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Example",
+            "content": [
+              "```lua",
+              "local ud = vec(1, -2, 0.2)",
+              "",
+              "local mag = ud:magnitude()",
+              "?mag -- 2.2449944320644...",
+              "",
+              "-- You can normalize a userdata vector by dividing it by its magnitude.",
+              "local normalized = ud / mag",
+              "?normalized -- (0.44543540318737, -0.89087080637475, 0.089087080637475)",
+              "?normalized:magnitude() -- 1.0",
               "```"
             ],
             "children": []
@@ -4964,65 +4964,6 @@
   },
   {
     "name": "main.md",
-    "path": "/picotron_api/userdata/methods/distance/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "userdata:distance(other): value",
-        "content": [],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "Calculates the distance between the first row of two float typed userdatas in Euclidean space.",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Returns",
-            "content": [],
-            "children": [
-              {
-                "level": 3,
-                "text": "`value`: number|nil",
-                "content": [
-                  "The distance between the vector in the first row of `self` and `other`, or nil if either is not float typed.",
-                  ""
-                ],
-                "children": []
-              }
-            ]
-          },
-          {
-            "level": 2,
-            "text": "Example",
-            "content": [
-              "```lua",
-              "local a = vec(0.07, -0.5, 0.7)",
-              "local b = vec(0.01, 0.3, 0.26)",
-              "local c = vec(0.64, 0.4, -0.3)",
-              "",
-              "?a:distance(b) -- 0.91498636284299",
-              "assert(a:distance(b) < 1)",
-              "",
-              "?b:distance(c) -- 0.8488227156569",
-              "assert(b:distance(c) < 1)",
-              "",
-              "?a:distance(c) -- 1.4611296807837",
-              "assert(a:distance(c) > 1)",
-              "```"
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
     "path": "/picotron_api/userdata/methods/div/main.md",
     "data": [
       {
@@ -5160,37 +5101,21 @@
   },
   {
     "name": "main.md",
-    "path": "/picotron_api/userdata/methods/column/main.md",
+    "path": "/picotron_api/userdata/methods/distance/main.md",
     "data": [
       {
         "level": 1,
-        "text": "userdata:column(column_i): column_ud",
+        "text": "userdata:distance(other): value",
         "content": [],
         "children": [
           {
             "level": 2,
             "text": "Overview",
             "content": [
-              "Creates a new 2D userdata containing a single column from the given userdata.",
+              "Calculates the distance between the first row of two float typed userdatas in Euclidean space.",
               ""
             ],
             "children": []
-          },
-          {
-            "level": 2,
-            "text": "Arguments",
-            "content": [],
-            "children": [
-              {
-                "level": 3,
-                "text": "`column_i`: integer",
-                "content": [
-                  "The index of the column to fetch.",
-                  ""
-                ],
-                "children": []
-              }
-            ]
           },
           {
             "level": 2,
@@ -5199,9 +5124,9 @@
             "children": [
               {
                 "level": 3,
-                "text": "`column_ud`: userdata",
+                "text": "`value`: number|nil",
                 "content": [
-                  "A 2D userdata with a width of 1 and the height and type of the original userdata.",
+                  "The distance between the vector in the first row of `self` and `other`, or nil if either is not float typed.",
                   ""
                 ],
                 "children": []
@@ -5213,20 +5138,18 @@
             "text": "Example",
             "content": [
               "```lua",
-              "-- 01 02 03",
-              "-- 04 05 06",
-              "local ud = userdata(\"u8\", 3, 2, \"010203040506\")",
-              "local ud_w, ud_h, ud_t = ud:attribs()",
+              "local a = vec(0.07, -0.5, 0.7)",
+              "local b = vec(0.01, 0.3, 0.26)",
+              "local c = vec(0.64, 0.4, -0.3)",
               "",
-              "local column = ud:column(1)",
-              "local column_w, column_h, column_t = column:attribs()",
+              "?a:distance(b) -- 0.91498636284299",
+              "assert(a:distance(b) < 1)",
               "",
-              "assert(column_h == ud_h)",
-              "assert(column_w == 1)",
-              "assert(column_t == ud_t)",
+              "?b:distance(c) -- 0.8488227156569",
+              "assert(b:distance(c) < 1)",
               "",
-              "assert(column[0] == 2)",
-              "assert(column[1] == 5)",
+              "?a:distance(c) -- 1.4611296807837",
+              "assert(a:distance(c) > 1)",
               "```"
             ],
             "children": []
@@ -5299,6 +5222,83 @@
               "local force = vec(0, 0, 5)",
               "local torque = position:cross(force)",
               "?torque -- (10, -5, 0)",
+              "```"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/picotron_api/userdata/methods/column/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "userdata:column(column_i): column_ud",
+        "content": [],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "Creates a new 2D userdata containing a single column from the given userdata.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [],
+            "children": [
+              {
+                "level": 3,
+                "text": "`column_i`: integer",
+                "content": [
+                  "The index of the column to fetch.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [],
+            "children": [
+              {
+                "level": 3,
+                "text": "`column_ud`: userdata",
+                "content": [
+                  "A 2D userdata with a width of 1 and the height and type of the original userdata.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Example",
+            "content": [
+              "```lua",
+              "-- 01 02 03",
+              "-- 04 05 06",
+              "local ud = userdata(\"u8\", 3, 2, \"010203040506\")",
+              "local ud_w, ud_h, ud_t = ud:attribs()",
+              "",
+              "local column = ud:column(1)",
+              "local column_w, column_h, column_t = column:attribs()",
+              "",
+              "assert(column_h == ud_h)",
+              "assert(column_w == 1)",
+              "assert(column_t == ud_t)",
+              "",
+              "assert(column[0] == 2)",
+              "assert(column[1] == 5)",
               "```"
             ],
             "children": []
@@ -5583,75 +5583,6 @@
   },
   {
     "name": "main.md",
-    "path": "/picotron_api/userdata/methods/attribs/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "userdata:attribs(): width, height, type",
-        "content": [],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "Gets the width, height, and type of the userdata.",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Returns",
-            "content": [],
-            "children": [
-              {
-                "level": 3,
-                "text": "`width`: integer",
-                "content": [
-                  "The number of columns in the userdata.",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "`height`: integer",
-                "content": [
-                  "The number of rows in the userdata. Unlike the [`height`](/picotron_api/userdata/methods/height/main.md) method, 1D userdatas will return 1 for this value.",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "`type`: \"u8\"|\"i16\"|\"i32\"|\"i64\"|\"f64\"",
-                "content": [
-                  "The type that the userdata contains as its string name.",
-                  ""
-                ],
-                "children": []
-              }
-            ]
-          },
-          {
-            "level": 2,
-            "text": "Example",
-            "content": [
-              "```lua",
-              "local function clone_empty(ud)",
-              "\tlocal width, height, ud_type = ud:attribs()",
-              "\treturn userdata(ud_type, width, height)",
-              "end",
-              "```"
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
     "path": "/picotron_api/userdata/methods/band/main.md",
     "data": [
       {
@@ -5789,6 +5720,75 @@
   },
   {
     "name": "main.md",
+    "path": "/picotron_api/userdata/methods/attribs/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "userdata:attribs(): width, height, type",
+        "content": [],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "Gets the width, height, and type of the userdata.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Returns",
+            "content": [],
+            "children": [
+              {
+                "level": 3,
+                "text": "`width`: integer",
+                "content": [
+                  "The number of columns in the userdata.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "`height`: integer",
+                "content": [
+                  "The number of rows in the userdata. Unlike the [`height`](/picotron_api/userdata/methods/height/main.md) method, 1D userdatas will return 1 for this value.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "`type`: \"u8\"|\"i16\"|\"i32\"|\"i64\"|\"f64\"",
+                "content": [
+                  "The type that the userdata contains as its string name.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Example",
+            "content": [
+              "```lua",
+              "local function clone_empty(ud)",
+              "\tlocal width, height, ud_type = ud:attribs()",
+              "\treturn userdata(ud_type, width, height)",
+              "end",
+              "```"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
     "path": "/picotron_api/userdata/methods/add/main.md",
     "data": [
       {
@@ -5919,80 +5919,6 @@
                 "children": []
               }
             ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
-    "path": "/picotron_api/program_structure/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "Program Structure",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "This information is sourced from the [Picotron Manual](https://www.lexaloffle.com/dl/docs/picotron_manual.html)",
-              "",
-              "This goes over the structure of Picotron Cartridges.",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Optional functions for the cart-loop",
-            "content": [
-              "",
-              "A Picotron program can optionally provide 3 functions:",
-              "",
-              "```lua",
-              "function _init()",
-              "-- called once just before the main loop",
-              "end",
-              "",
-              "function _update()",
-              "-- called 60 times per second",
-              "end",
-              "",
-              "function _draw()",
-              "-- called each time the window manager asks for a frame",
-              "-- (normally 60, 30 or 20 times per second)",
-              "end",
-              "```",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Running Programs in the background",
-            "content": [
-              "",
-              "A program that only contains `_update` (but no `_draw`) will continue to run in the background by default, but with a lower cpu priority.",
-              "",
-              "When `_draw` is also defined (and the program has a window or fullscreen display), the `_draw` and `_update` functions are only called when the program is at least partially visible. This allows Picotron to keep many tabs and workspaces open without impacting performance. In this case, the `_update` and/or `_draw` functions can be manually set to run in the background with:",
-              "",
-              "```lua",
-              "window{background_updates = true}",
-              "```",
-              "",
-              "or:",
-              "```lua",
-              "window{background_draws=true}",
-              "```",
-              "",
-              "respectively."
-            ],
-            "children": []
           }
         ]
       }
@@ -6548,6 +6474,206 @@
     ]
   },
   {
+    "name": "main.md",
+    "path": "/picotron_api/program_structure/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "Program Structure",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "This information is sourced from the [Picotron Manual](https://www.lexaloffle.com/dl/docs/picotron_manual.html)",
+              "",
+              "This goes over the structure of Picotron Cartridges.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Optional functions for the cart-loop",
+            "content": [
+              "",
+              "A Picotron program can optionally provide 3 functions:",
+              "",
+              "```lua",
+              "function _init()",
+              "-- called once just before the main loop",
+              "end",
+              "",
+              "function _update()",
+              "-- called 60 times per second",
+              "end",
+              "",
+              "function _draw()",
+              "-- called each time the window manager asks for a frame",
+              "-- (normally 60, 30 or 20 times per second)",
+              "end",
+              "```",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Running Programs in the background",
+            "content": [
+              "",
+              "A program that only contains `_update` (but no `_draw`) will continue to run in the background by default, but with a lower cpu priority.",
+              "",
+              "When `_draw` is also defined (and the program has a window or fullscreen display), the `_draw` and `_update` functions are only called when the program is at least partially visible. This allows Picotron to keep many tabs and workspaces open without impacting performance. In this case, the `_update` and/or `_draw` functions can be manually set to run in the background with:",
+              "",
+              "```lua",
+              "window{background_updates = true}",
+              "```",
+              "",
+              "or:",
+              "```lua",
+              "window{background_draws=true}",
+              "```",
+              "",
+              "respectively."
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "readme.md",
+    "path": "/picotron_api/gui/event_callbacks/readme.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "Picotron API > GUI > Event Callbacks",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Documentation on the event callbacks in Picotron's GUIs.",
+              "",
+              "Events are called with the arguments `self,msg`",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Global `msg` properties",
+            "content": [
+              "",
+              "All event callbacks will contain these properties in `msg`, alongside their element-specific properties.",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "dx",
+                "content": [
+                  "",
+                  "Distance in pixels the mouse moved on the x axis this frame",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "dy",
+                "content": [
+                  "",
+                  "Distance in pixels the mouse moved on the y axis this frame",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "mb",
+                "content": [
+                  "",
+                  "Mouse buttons currently held down, as a bitfield. See [`mouse()`](/picotron_api/functions/mouse/main.md) for more info.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "mx",
+                "content": [
+                  "",
+                  "Position of mouse on x axis relative to this element",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "my",
+                "content": [
+                  "",
+                  "Position of mouse on y axis relative to this element",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "has_pointer",
+                "content": [
+                  "",
+                  "True if the mouse is currently hovering this element. Useful for mouseover effects.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Event Callbacks",
+            "content": [
+              "",
+              "[update](update/main.md)",
+              "",
+              "[draw](draw/main.md)",
+              "",
+              "[click](click/main.md)",
+              "",
+              "[doubleclick](doubleclick/main.md)",
+              "",
+              "[tap](tap/main.md)",
+              "",
+              "[doubletap](doubletap/main.md)",
+              "",
+              "[release](release/main.md)",
+              "",
+              "[mousewheel](mousewheel/main.md)",
+              "",
+              "[drag](drag/main.md)",
+              "",
+              "[hover](hover/main.md)",
+              ""
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "readme.md",
     "path": "/picotron_api/gui/readme.md",
     "data": [
@@ -6808,132 +6934,6 @@
     ]
   },
   {
-    "name": "readme.md",
-    "path": "/picotron_api/gui/event_callbacks/readme.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "Picotron API > GUI > Event Callbacks",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "Documentation on the event callbacks in Picotron's GUIs.",
-              "",
-              "Events are called with the arguments `self,msg`",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Global `msg` properties",
-            "content": [
-              "",
-              "All event callbacks will contain these properties in `msg`, alongside their element-specific properties.",
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "dx",
-                "content": [
-                  "",
-                  "Distance in pixels the mouse moved on the x axis this frame",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "dy",
-                "content": [
-                  "",
-                  "Distance in pixels the mouse moved on the y axis this frame",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "mb",
-                "content": [
-                  "",
-                  "Mouse buttons currently held down, as a bitfield. See [`mouse()`](/picotron_api/functions/mouse/main.md) for more info.",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "mx",
-                "content": [
-                  "",
-                  "Position of mouse on x axis relative to this element",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "my",
-                "content": [
-                  "",
-                  "Position of mouse on y axis relative to this element",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "has_pointer",
-                "content": [
-                  "",
-                  "True if the mouse is currently hovering this element. Useful for mouseover effects.",
-                  ""
-                ],
-                "children": []
-              }
-            ]
-          },
-          {
-            "level": 2,
-            "text": "Event Callbacks",
-            "content": [
-              "",
-              "[update](update/main.md)",
-              "",
-              "[draw](draw/main.md)",
-              "",
-              "[click](click/main.md)",
-              "",
-              "[doubleclick](doubleclick/main.md)",
-              "",
-              "[tap](tap/main.md)",
-              "",
-              "[doubletap](doubletap/main.md)",
-              "",
-              "[release](release/main.md)",
-              "",
-              "[mousewheel](mousewheel/main.md)",
-              "",
-              "[drag](drag/main.md)",
-              "",
-              "[hover](hover/main.md)",
-              ""
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
     "name": "main.md",
     "path": "/picotron_api/gui/event_callbacks/tap/main.md",
     "data": [
@@ -7097,6 +7097,30 @@
   },
   {
     "name": "main.md",
+    "path": "/picotron_api/gui/event_callbacks/draw/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "draw",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Triggered every gui:draw_all()."
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
     "path": "/picotron_api/gui/event_callbacks/hover/main.md",
     "data": [
       {
@@ -7189,30 +7213,6 @@
   },
   {
     "name": "main.md",
-    "path": "/picotron_api/gui/event_callbacks/draw/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "draw",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "Triggered every gui:draw_all()."
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
     "path": "/picotron_api/gui/event_callbacks/doubletap/main.md",
     "data": [
       {
@@ -7239,6 +7239,21 @@
   },
   {
     "name": "main.md",
+    "path": "/picotron_api/gui/event_callbacks/click/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "click",
+        "content": [
+          "",
+          "Triggered on the first frame that a mouse button is pressed."
+        ],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "main.md",
     "path": "/picotron_api/gui/event_callbacks/doubleclick/main.md",
     "data": [
       {
@@ -7260,21 +7275,6 @@
             "children": []
           }
         ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
-    "path": "/picotron_api/gui/event_callbacks/click/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "click",
-        "content": [
-          "",
-          "Triggered on the first frame that a mouse button is pressed."
-        ],
-        "children": []
       }
     ]
   },
@@ -7349,11 +7349,11 @@
   },
   {
     "name": "main.md",
-    "path": "/picotron_api/gui/attributes/z/main.md",
+    "path": "/picotron_api/gui/attributes/y/main.md",
     "data": [
       {
         "level": 1,
-        "text": "z",
+        "text": "y",
         "content": [
           ""
         ],
@@ -7363,11 +7363,7 @@
             "text": "Overview",
             "content": [
               "",
-              "Element position along the z axis.",
-              "",
-              "Elements with a higher z value will appear on top of elements with a lower z value.",
-              "",
-              "Elements with the same z value will be drawn in order based on which one was added first - newer elements are drawn on top of older elements.",
+              "Element position along the y axis",
               ""
             ],
             "children": []
@@ -7389,11 +7385,11 @@
   },
   {
     "name": "main.md",
-    "path": "/picotron_api/gui/attributes/y/main.md",
+    "path": "/picotron_api/gui/attributes/z/main.md",
     "data": [
       {
         "level": 1,
-        "text": "y",
+        "text": "z",
         "content": [
           ""
         ],
@@ -7403,7 +7399,11 @@
             "text": "Overview",
             "content": [
               "",
-              "Element position along the y axis",
+              "Element position along the z axis.",
+              "",
+              "Elements with a higher z value will appear on top of elements with a lower z value.",
+              "",
+              "Elements with the same z value will be drawn in order based on which one was added first - newer elements are drawn on top of older elements.",
               ""
             ],
             "children": []
@@ -7666,6 +7666,44 @@
   },
   {
     "name": "main.md",
+    "path": "/picotron_api/gui/attributes/justify/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "justify",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Automatically adjusts element x position based on element and parent horizontal size.",
+              "",
+              "[`Element.x`](/picotron_api/gui/attributes/x/main.md) is then added to the calculated value, functioning as an offset.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Values",
+            "content": [
+              "",
+              "Default value: \"left\"",
+              "",
+              "Valid values: \"left\", \"center\", \"right\""
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
     "path": "/picotron_api/gui/attributes/min_width/main.md",
     "data": [
       {
@@ -7738,11 +7776,11 @@
   },
   {
     "name": "main.md",
-    "path": "/picotron_api/gui/attributes/justify/main.md",
+    "path": "/picotron_api/gui/attributes/height/main.md",
     "data": [
       {
         "level": 1,
-        "text": "justify",
+        "text": "height",
         "content": [
           ""
         ],
@@ -7752,9 +7790,7 @@
             "text": "Overview",
             "content": [
               "",
-              "Automatically adjusts element x position based on element and parent horizontal size.",
-              "",
-              "[`Element.x`](/picotron_api/gui/attributes/x/main.md) is then added to the calculated value, functioning as an offset.",
+              "Height of the element",
               ""
             ],
             "children": []
@@ -7764,9 +7800,11 @@
             "text": "Values",
             "content": [
               "",
-              "Default value: \"left\"",
+              "Must be set to a number if [`height_rel`](/picotron_api/gui/attributes/height_rel/main.md) is not used.",
               "",
-              "Valid values: \"left\", \"center\", \"right\""
+              "Default value: nil",
+              "",
+              "Valid values: any number"
             ],
             "children": []
           }
@@ -7843,44 +7881,6 @@
             "level": 2,
             "text": "Values",
             "content": [
-              "",
-              "Default value: nil",
-              "",
-              "Valid values: any number"
-            ],
-            "children": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
-    "path": "/picotron_api/gui/attributes/height/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "height",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "Height of the element",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Values",
-            "content": [
-              "",
-              "Must be set to a number if [`height_rel`](/picotron_api/gui/attributes/height_rel/main.md) is not used.",
               "",
               "Default value: nil",
               "",
@@ -8266,112 +8266,6 @@
   },
   {
     "name": "main.md",
-    "path": "/picotron_api/gui/attachments/attach_field/main.md",
-    "data": [
-      {
-        "level": 1,
-        "text": "attach_field(el)",
-        "content": [
-          ""
-        ],
-        "children": [
-          {
-            "level": 2,
-            "text": "Overview",
-            "content": [
-              "",
-              "Attaches a text field to the element.",
-              "",
-              "Used for editing small amounts of text.",
-              "",
-              "Source: [source.lua](source.lua)",
-              ""
-            ],
-            "children": []
-          },
-          {
-            "level": 2,
-            "text": "Expected attributes",
-            "content": [
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "x",
-                "content": [
-                  "",
-                  "x-position of the element",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "y",
-                "content": [
-                  "",
-                  "y-position of the element",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "width",
-                "content": [
-                  "",
-                  "width of the element",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "height",
-                "content": [
-                  "",
-                  "height of the element",
-                  ""
-                ],
-                "children": []
-              }
-            ]
-          },
-          {
-            "level": 2,
-            "text": "Expected event callbacks",
-            "content": [
-              ""
-            ],
-            "children": [
-              {
-                "level": 3,
-                "text": "get() event callback",
-                "content": [
-                  "",
-                  "A function to handle getting the field's intial text",
-                  ""
-                ],
-                "children": []
-              },
-              {
-                "level": 3,
-                "text": "set() event callback",
-                "content": [
-                  "",
-                  "A function to handle setting the field's text to the user input"
-                ],
-                "children": []
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "main.md",
     "path": "/picotron_api/gui/attachments/attach_button/main.md",
     "data": [
       {
@@ -8584,6 +8478,112 @@
                 "content": [
                   "",
                   "height of the element"
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/picotron_api/gui/attachments/attach_field/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "attach_field(el)",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Attaches a text field to the element.",
+              "",
+              "Used for editing small amounts of text.",
+              "",
+              "Source: [source.lua](source.lua)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Expected attributes",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "x",
+                "content": [
+                  "",
+                  "x-position of the element",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "y",
+                "content": [
+                  "",
+                  "y-position of the element",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "width",
+                "content": [
+                  "",
+                  "width of the element",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "height",
+                "content": [
+                  "",
+                  "height of the element",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "Expected event callbacks",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "get() event callback",
+                "content": [
+                  "",
+                  "A function to handle getting the field's intial text",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "set() event callback",
+                "content": [
+                  "",
+                  "A function to handle setting the field's text to the user input"
                 ],
                 "children": []
               }
@@ -10707,6 +10707,62 @@
   },
   {
     "name": "main.md",
+    "path": "/picotron_api/functions/on_event/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "on_event(event, function)",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "`on_event` allows for you to subscribe to the event `event` and act with function `function` upon the event.",
+              "",
+              "You can subscribe to the same event multiple times.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Arguments",
+            "content": [
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "`event`: string",
+                "content": [
+                  "",
+                  "The event to listen to, this can be any arbritrary value, but there are some default events as listed below.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "`function`: function|nil",
+                "content": [
+                  "",
+                  "This function is called upon the event, when `nil` it removes all subscriptions to the event.",
+                  "It is called with a `msg` table, consisting of data to do with the event. Detailed event information is found [here](/picotron_api/events/readme.md)"
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
     "path": "/picotron_api/functions/mv/main.md",
     "data": [
       {
@@ -12274,6 +12330,1050 @@
             "content": [
               "",
               "Returns the previous camera's x,y positions."
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "readme.md",
+    "path": "/picotron_api/events/readme.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "Picotron API > Events",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "Overview",
+            "content": [
+              "",
+              "Between different Picotron processes, events can be sent through [`send_message`](/picotron_api/functions/send_message/main.md).",
+              "",
+              "These can be received through [`on_event`](/picotron_api/functions/on_event/main.md) with data through a `msg` table in a callback function.",
+              "",
+              "There are some default events that exist, alongside the events you can create to send data between processes, these are found [here](default_events/main.md)",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "Event properties",
+            "content": [
+              "",
+              "All events have the following properties in `msg`:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "from_proc_id",
+                "content": [
+                  "",
+                  "The Process ID that the event is sent from."
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main.md",
+    "path": "/picotron_api/events/default_events/main.md",
+    "data": [
+      {
+        "level": 1,
+        "text": "Default Events",
+        "content": [
+          ""
+        ],
+        "children": [
+          {
+            "level": 2,
+            "text": "`modified:filepath`",
+            "content": [
+              "",
+              "You can detect modifications to a filepath through the filepath, prefixed by `modified:`, e.g: detecting changes to `/foo.txt`, `modified:/foo.txt`",
+              "",
+              "Sandboxed programs can only subscribe to changes in `/ram/shared` and `/appdata`.",
+              "",
+              "The following information is given through the `msg` table:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "filename",
+                "content": [
+                  "",
+                  "Filename of the filepath.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`move`",
+            "content": [
+              "",
+              "Called when the window is moved",
+              "",
+              "The following information is given through the `msg` table:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "win_x",
+                "content": [
+                  "",
+                  "x-position of the window",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "win_y",
+                "content": [
+                  "",
+                  "y-position of the window",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`resize`",
+            "content": [
+              "",
+              "Called when the window is resized",
+              "",
+              "The following information is given through the `msg` table:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "width",
+                "content": [
+                  "",
+                  "Width (px) of the window",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "height",
+                "content": [
+                  "",
+                  "Height (px) of the window",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "[x]",
+                "content": [
+                  "",
+                  "The x-position of the window is sometimes sent through this.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "[y]",
+                "content": [
+                  "",
+                  "The y-position of the window is sometimes sent through this.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`grab`",
+            "content": [
+              "",
+              "Used when a window requested that it is grabbed.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`drag_toolbar`",
+            "content": [
+              "",
+              "Used to change the toolbar's y-position.",
+              "",
+              "The `msg` table has the following properties:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "dy",
+                "content": [
+                  "",
+                  "The y-position to drag the toolbar to",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`drag_infobar`",
+            "content": [
+              "",
+              "Used to change the infobar's y-position.",
+              "",
+              "The `msg` table has the following properties:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "dy",
+                "content": [
+                  "",
+                  "The y-position to drag the infobar to",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`dock_toolbar`",
+            "content": [
+              "",
+              "Used to choose whether the toolbar is docked.",
+              "",
+              "The `msg` table has the following properties:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "state",
+                "content": [
+                  "",
+                  "A boolean of whether the toolbar is docked, true, or the toolbar is undocked, false.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`bring_window_to_front`",
+            "content": [
+              "",
+              "Typically unused by cartridges, instead handled by `events.lua`.",
+              "",
+              "Used by the toolbar to bring the window to the front.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`resume_pwc`",
+            "content": [
+              "",
+              "Typically unused by cartridges, instead handled by `events.lua`.",
+              "",
+              "Used when the present working cartridge is resumed.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`drop_items`",
+            "content": [
+              "",
+              "Called when items/files are dropped onto the window.",
+              "",
+              "This can also be triggered with pasting item data through `CTRL+V`.",
+              "",
+              "The following information is given through the `msg` table:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "items",
+                "content": [
+                  "",
+                  "The items, a table, dropped onto the window.",
+                  "",
+                  "The item can contain the metadata of a file, but also follows the structure where an item *can* consist of:",
+                  ""
+                ],
+                "children": [
+                  {
+                    "level": 4,
+                    "text": "mx",
+                    "content": [
+                      "",
+                      "The mouse's x-position at the time of dropping the item.",
+                      ""
+                    ],
+                    "children": []
+                  },
+                  {
+                    "level": 4,
+                    "text": "my",
+                    "content": [
+                      "",
+                      "The mouse's y-position at the time of dropping the item.",
+                      ""
+                    ],
+                    "children": []
+                  },
+                  {
+                    "level": 4,
+                    "text": "pod_type",
+                    "content": [
+                      "",
+                      "This describes the type of the pod, for files/file locations, this is seen as `location`.",
+                      ""
+                    ],
+                    "children": []
+                  },
+                  {
+                    "level": 4,
+                    "text": "location",
+                    "content": [
+                      "",
+                      "This is seen with dragging items which are files/locations. This is a string which is the filepath to the file.",
+                      ""
+                    ],
+                    "children": []
+                  },
+                  {
+                    "level": 4,
+                    "text": "args",
+                    "content": [
+                      "",
+                      "Unknown, stored when creating `.loc` files with the system filenav.",
+                      ""
+                    ],
+                    "children": []
+                  },
+                  {
+                    "level": 4,
+                    "text": "env",
+                    "content": [
+                      "",
+                      "Unknown, stored when creating `.loc` files with the system filenav.",
+                      "",
+                      "*Presumably something that is appended to the data received in [env()](/picotron_api/functions/env/main.md).*",
+                      ""
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`gained_visibility`",
+            "content": [
+              "",
+              "Called when a process gains visibility.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`lost_visibility`",
+            "content": [
+              "",
+              "Called when a process loses visibility.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`filenav_refresh`",
+            "content": [
+              "",
+              "Called by the system `about.p64` when icons are updated to trigger the filenav to refresh icons.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`lost_focus`",
+            "content": [
+              "",
+              "Called when a process loses its focus.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`gained_focus`",
+            "content": [
+              "",
+              "Called when a process gains its focus.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`confirm_close_window`",
+            "content": [
+              "",
+              "Placeholder event used to do something when window is closed, discarding",
+              "",
+              "It is marked to not used this event by zep.",
+              "",
+              "",
+              "```",
+              "-- unsaved changes. ** don't use this event",
+              "-- design will likely be reworked **",
+              "```",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`squash`",
+            "content": [
+              "",
+              "Typically unused by cartridges, instead handled by `events.lua`.",
+              "",
+              "Called when a window is resized as a result of squashing.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`menu_action`",
+            "content": [
+              "",
+              "Called when a menuitem is acted upon, you shouldn't have to use this as it is handled automatically with menuitems.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`update_menu_labels`",
+            "content": [
+              "",
+              "Called when the pause menu is brought up, requested by the window manager.",
+              "",
+              "You shouldn't have to use this as it is handled automatically with menuitems.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`toggle_pause_menu`",
+            "content": [
+              "",
+              "Typically unused by cartridges, instead handled by `events.lua`.",
+              "",
+              "Called to toggle the pause menu.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`close_pause_menu`",
+            "content": [
+              "",
+              "Typically unused by cartridges, instead handled by `events.lua`.",
+              "",
+              "Called to close the pause menu.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`toggle_app_menu`",
+            "content": [
+              "",
+              "Typically unused by cartridges, instead handled by `events.lua`.",
+              "",
+              "Called to toggle the app menu.",
+              "",
+              "The `msg` table contains the properties:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "context",
+                "content": [
+                  "",
+                  "Unknown",
+                  "",
+                  "Can be `nil`, `extra` or `floating`, `floating` seems to be legacy and unused.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "proc_id",
+                "content": [
+                  "",
+                  "The process id of the app menu to be toggled.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "x",
+                "content": [
+                  "",
+                  "Unknown",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "y",
+                "content": [
+                  "",
+                  "Unknown",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`input_response`",
+            "content": [
+              "",
+              "Typically unused by cartridges, instead handled by `events.lua`.",
+              "",
+              "Unknown",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`mouse`",
+            "content": [
+              "",
+              "Typically unused by cartridges, instead handled by `events.lua`.",
+              "",
+              "Called when the mouse data is changed. It contains the following properties in the `msg` table:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "mx",
+                "content": [
+                  "",
+                  "x-position of the mouse",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "my",
+                "content": [
+                  "",
+                  "y-position of the mouse",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "mb",
+                "content": [
+                  "",
+                  "bitfield of the mouse's button presses",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`mousefield`",
+            "content": [
+              "",
+              "Typically unused by cartridges, instead handled by `events.lua`.",
+              "",
+              "Similar to the `mouse` event, this is called when the mouse's scrollwheel is updated.",
+              "",
+              "It has the following properties:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "wheel_x",
+                "content": [
+                  "",
+                  "The change in the mousewheel on the x-axis.",
+                  "",
+                  "`nil` when unchanged.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "wheel_y",
+                "content": [
+                  "",
+                  "The change in the mousewheel on the y-axis.",
+                  "",
+                  "`nil` when unchanged.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`mouselockedmove`",
+            "content": [
+              "",
+              "Similar to the `mouse` event, this is called when the mouse is moved when the mouse is locked.",
+              "",
+              "It has the following properties:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "locked_dx",
+                "content": [
+                  "",
+                  "The change in the mouse position on the x-axis.",
+                  "",
+                  "`nil` when unchanged.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "locked_dy",
+                "content": [
+                  "",
+                  "The change in the mouse position on the y-axis.",
+                  "",
+                  "`nil` when unchanged.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`keydown`",
+            "content": [
+              "",
+              "Typically unused by cartridges, instead handled by `events.lua`.",
+              "",
+              "Called when a key is down.",
+              "",
+              "The `msg` table contains the property:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "scancode",
+                "content": [
+                  "",
+                  "Scancode of the key that is down.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`keyup`",
+            "content": [
+              "",
+              "Typically unused by cartridges, instead handled by `events.lua`.",
+              "",
+              "Called when a key is released/up.",
+              "",
+              "The `msg` table contains the property:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "scancode",
+                "content": [
+                  "",
+                  "Scancode of the key that is up.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`keydown_ctrl`",
+            "content": [
+              "",
+              "Typically unused by cartridges, instead handled by `events.lua`.",
+              "",
+              "Used for carrying over the `ctrl` key's pressed status over different processes.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`keydown_ctrl_v`",
+            "content": [
+              "",
+              "Typically unused by cartridges, instead handled by `events.lua`.",
+              "",
+              "Used for web exports, called when CTRL-V is pressed.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`clear_key`",
+            "content": [
+              "",
+              "Used by `wm` to stop keypresses getting through",
+              "",
+              "The `msg` table contains the property:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "scancode",
+                "content": [
+                  "",
+                  "Scancode of the key that is to be cleared.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`reset_kbd`",
+            "content": [
+              "",
+              "Typically unused by cartridges, instead handled by `events.lua`.",
+              "",
+              "Used when a process is being told to reset its keyboard state.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`reset_kbd_for_paste`",
+            "content": [
+              "",
+              "Typically unused by cartridges, instead handled by `events.lua`.",
+              "",
+              "Used when a process is being told to clear its keypress of `v`.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`textinput`",
+            "content": [
+              "",
+              "Typically unused by cartridges, instead handled by `events.lua`.",
+              "",
+              "Used when text is inputted.",
+              "",
+              "The `msg` table contains the property:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "text",
+                "content": [
+                  "",
+                  "The text that is inputted.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`exit`",
+            "content": [
+              "",
+              "Typically unused by cartridges, instead handled by `events.lua`.",
+              "",
+              "Placeholder event used when confirming window close from system app `confirm.p64`",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`pause`",
+            "content": [
+              "",
+              "Called when the process is paused.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`unpause`",
+            "content": [
+              "",
+              "Called when the process is unpaused.",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`extend_fileview`",
+            "content": [
+              "",
+              "Used by system apps to request access to particular files.",
+              "",
+              "Requires the process to be a trusted system app (in `/system`, e.g: filenav)",
+              "",
+              "The `msg` table contains the property:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "filename",
+                "content": [
+                  "",
+                  "The requested path, a string, of the file being requested to have access to.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`search`",
+            "content": [
+              "",
+              "Used to set the search term after jumping to the window via ctrl-h",
+              "",
+              "The `msg` table contains the property:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "term",
+                "content": [
+                  "",
+                  "The search term.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`save_working_cart_files_completed`",
+            "content": [
+              "",
+              "Unknown",
+              ""
+            ],
+            "children": []
+          },
+          {
+            "level": 2,
+            "text": "`save`",
+            "content": [
+              "",
+              "Invoked directly from app menu, and by wm when about to run / save cartridge",
+              "",
+              "The `msg` table contains the properties:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "autosave",
+                "content": [
+                  "",
+                  "A boolean on whether the save is triggered by an auto-save.",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "notify_on_complete",
+                "content": [
+                  "",
+                  "A PID of a process to return the finished status of the save event.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`open_file`",
+            "content": [
+              "",
+              "Called by filenav intention.",
+              "",
+              "The `msg` table contains the property:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "filename",
+                "content": [
+                  "",
+                  "Path to the file that is opened.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`jump_to_spot`",
+            "content": [
+              "",
+              "Typically unused by cartridges, instead handled by `events.lua`.",
+              "",
+              "Unknown",
+              "",
+              "The `msg` table contains the properties:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "hloc",
+                "content": [
+                  "",
+                  "Unknown",
+                  ""
+                ],
+                "children": []
+              },
+              {
+                "level": 3,
+                "text": "extra",
+                "content": [
+                  "",
+                  "Unknown",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`save_file_as`",
+            "content": [
+              "",
+              "Called by filenav intention.",
+              "",
+              "The `msg` table contains the property:",
+              ""
+            ],
+            "children": [
+              {
+                "level": 3,
+                "text": "filename",
+                "content": [
+                  "",
+                  "Path to the location of the file to be stored at.",
+                  ""
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "text": "`update`",
+            "content": [
+              "",
+              "Unknown",
+              "",
+              "",
+              ""
             ],
             "children": []
           }
