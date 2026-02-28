@@ -6,7 +6,7 @@ Between different Picotron processes, events can be sent through [`send_message`
 
 These can be received through [`on_event`](/picotron_api/functions/on_event/main.md) with data through a `msg` table in a callback function.
 
-There are some default events that exist, alongside the events you can create to send data between processes, these are found [here](default_events/main.md)
+There are some default events that exist, alongside the events you can create to send data between processes, these are found [here](default_events/readme.md)
 
 ## Event properties
 
