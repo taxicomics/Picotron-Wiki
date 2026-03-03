@@ -4,6 +4,8 @@
 
 Guides for development in Picotron
 
+## Text-based guides
+
 [Writing a simple grid-based game](/guides/grid_based_game/main.md)
 
 [Using a Host OS terminal with Picotron](/guides/host_os_terminal/main.md)
@@ -24,6 +26,6 @@ Guides for development in Picotron
 
 [External Editors](/guides/external_editors/main.md)
 
-### Video guides
+## Video guides
 
 [Creating a desktop background cartridge](https://youtu.be/iV6Ky3MOFT4)
