@@ -23,3 +23,7 @@ Guides for development in Picotron
 [Terminal Commands](/guides/terminal_commands/main.md)
 
 [External Editors](/guides/external_editors/main.md)
+
+### Video guides
+
+[Creating a desktop background cartridge](https://youtu.be/iV6Ky3MOFT4)
