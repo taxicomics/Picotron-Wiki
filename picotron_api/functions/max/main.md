@@ -1,14 +1,14 @@
-# max(number1, number2)
+# max( a, b )
 
 ## Overview
 Returns the bigger of two numbers. 
 
 ## Arguments
 
-### `number1`: number
+### `a`: number
 An int or a float to be compared with number2
 
-### `number2`: number
+### `b`: number
 An int or a float to be compared with number1
 
 ## Returns
