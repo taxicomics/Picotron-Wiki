@@ -6,10 +6,10 @@ Returns the bigger of two numbers.
 ## Arguments
 
 ### `a`: number
-An int or a float to be compared with number2
+A number to be compared with b
 
 ### `b`: number
-An int or a float to be compared with number1
+A number to be compared with a
 
 ## Returns
 
