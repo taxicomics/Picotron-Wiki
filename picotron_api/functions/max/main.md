@@ -13,7 +13,7 @@ A number to be compared with a
 
 ## Returns
 
-### number
+### `max`: number
 The bigger of the two numbers
 
 ## Examples
