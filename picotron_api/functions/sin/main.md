@@ -2,8 +2,7 @@
 
 ## Overview
 
-`sin` gives the sine of value `a` where 1 is one full turn. `sin()` is inverted to account for screenspace. One full rotation from 0-1 starts at east(right) and goes anticlockwise.
-
+`sin` gives the sine of value `a` where 1 is one full turn. `sin()` is inverted to account for screenspace. 
 ## Arguments
 
 ### `a`: float or int
